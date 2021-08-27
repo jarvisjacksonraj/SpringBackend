@@ -1,7 +1,7 @@
 package dev.jarvis.jackson.BooksRestAPI.controller;
 
 import dev.jarvis.jackson.BooksRestAPI.model.Book;
-import dev.jarvis.jackson.BooksRestAPI.exception.BookAlreadyExistsException;
+import dev.jarvis.jackson.BooksRestAPI.exception.BookAlreadyExistException;
 import dev.jarvis.jackson.BooksRestAPI.exception.BookNotFoundException;
 import dev.jarvis.jackson.BooksRestAPI.service.BookService;
 import org.springframework.http.HttpStatus;
@@ -31,7 +31,7 @@ class BookController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
-    public void create(@RequestBody Book book) throws BookAlreadyExistsException {
+    public void create(@RequestBody Book book) throws BookAlreadyExistException {
         bookService.create(book);
     }
 
