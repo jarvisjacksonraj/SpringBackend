@@ -1,4 +1,4 @@
-package dev.jacksonraj.springbasics.movierecommendersystem.lesson4;
+package dev.jacksonraj.springbasics.movierecommendersystem.lesson5;
 
 import dev.jacksonraj.springbasics.movierecommendersystem.lesson2.Filter;
 import org.springframework.stereotype.Component;

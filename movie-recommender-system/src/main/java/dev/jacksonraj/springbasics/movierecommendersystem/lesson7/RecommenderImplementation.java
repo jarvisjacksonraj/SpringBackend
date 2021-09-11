@@ -1,6 +1,5 @@
-package dev.jacksonraj.springbasics.movierecommendersystem.lesson6;
+package dev.jacksonraj.springbasics.movierecommendersystem.lesson7;
 
-import dev.jacksonraj.springbasics.movierecommendersystem.lesson2.Filter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -8,16 +7,26 @@ import org.springframework.stereotype.Component;
 @Component
 public class RecommenderImplementation {
 
-    @Autowired
-    @Qualifier("CBF")
     private Filter filter;
 
+    //constructor injection
+    @Autowired
+    public RecommenderImplementation(@Qualifier("collaborativeFilter") Filter filter) {
+        super();
+        this.filter = filter;
+        System.out.println("Constructor invoked...");
+    }
+
+
+    //use the injected filter to find recommendations
     public String[] recommendMovies(String movie) {
+
+        //print the name of interface implementation being used
         System.out.println("\nName of the filter in use: " + filter + "\n");
 
         String[] results = filter.getRecommendations("Finding Dory");
 
         return results;
-
     }
+
 }

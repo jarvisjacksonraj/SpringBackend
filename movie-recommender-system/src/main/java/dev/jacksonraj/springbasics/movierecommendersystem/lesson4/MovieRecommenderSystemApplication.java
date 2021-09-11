@@ -1,4 +1,4 @@
-package dev.jacksonraj.springbasics.movierecommendersystem.lesson3;
+package dev.jacksonraj.springbasics.movierecommendersystem.lesson4;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

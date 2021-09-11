@@ -1,4 +1,4 @@
-package dev.jacksonraj.springbasics.movierecommendersystem.lesson3;
+package dev.jacksonraj.springbasics.movierecommendersystem.lesson4;
 
 import dev.jacksonraj.springbasics.movierecommendersystem.lesson2.Filter;
 import org.springframework.beans.factory.annotation.Autowired;
