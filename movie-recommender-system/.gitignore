@@ -35,3 +35,5 @@ build/
 
 
 movie-recommender-system/.idea
+/src/main/java/dev/jacksonraj/springbasics/movierecommendersystem/lesson6/
+/src/main/java/dev/jacksonraj/springbasics/movierecommendersystem/lesson7/
